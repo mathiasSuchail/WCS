@@ -1,5 +1,8 @@
 body{
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 nav{
@@ -72,4 +75,11 @@ form button
     color: white;
     border-radius: 5px;
     padding: 5px 20px;
+}
+
+footer{
+    background-color: gray;
+    margin-top: auto;
+    padding: 10px;
+    color: white;
 }
