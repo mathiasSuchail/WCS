@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+}
+
+nav{
+    background-color: blueviolet;
+    display: flex;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 20px 20px;
+}
+
+nav ul li a.active{
+    background-color: white;
+    color: blueviolet;
+}
+
+h1{
+    text-align: center;
+    margin : 30px 10% 10px 10%;
+    padding : 10px 0;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    margin: 0 20%;
+}
+
+form div
+{
+    text-align: left;
+    width:100%
+}
+form label
+{
+    display: block;
+}
+
+form input
+{
+    height: 20px;
+}
+
+form input, form textarea
+{
+    display: block;
+    width: 100%;
+    background-color: lightgray;
+    border: 0px;
+    border-radius: 5px;
+    resize: none;
+    margin:  5px 0 10px 0; 
+
+}
+form button
+{
+    width: fit-content;
+    background-color: blueviolet;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
