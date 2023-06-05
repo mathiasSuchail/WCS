@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COURS JS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div>
+        <h1>Gestion de tickets</h1>
+        <div id="message"></div>
+        <div class="input">
+            <input type="text" id="tag" placeholder="Nom du dossier">
+            <textarea name="" id="description" cols="30" rows="10" placeholder="Description du problème"></textarea>
+            <div><button id="addTag">ajouter</button>
+                <button id="editTag">Editer</button></div>
+            
+        </div>
+        <div id="target">
+            <div id="pending">
+                <h2>Tickets en attente</h2>
+            </div>
+            <div id="processing">
+                <h2>Tickets en cours</h2>
+            </div>
+            <div id="closed">
+                <h2>Tickets cloturés</h2>
+            </div>
+        </div>
+    </div>
+    <script src="index.js">
+
+    </script>
+</body>
+</html>
