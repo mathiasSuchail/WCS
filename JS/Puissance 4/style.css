@@ -26,3 +26,17 @@
 .J2{
     background-color: red;
 }
+
+#settings form{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+}
+
+#settings form input{
+    margin-bottom: 20px;
+}
+#settings form label{
+    font-weight: 700;
+}
