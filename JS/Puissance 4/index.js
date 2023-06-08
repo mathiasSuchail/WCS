@@ -21,6 +21,10 @@ function settings() {
 function generateHTML(nbCol, nbRow) {
   document.querySelector("h1").innerText = "Puissance " + pow;
   document.querySelector("h2").innerText = "Au tour du joueur " + tour;
+  document.querySelector("body").appendChild(document.createElement("h3"));
+  document.querySelector("h3").innerText = `SCORES : J1(${localStorage.getItem(
+    "J1"
+  )}) J2(${localStorage.getItem("J2")})`;
   for (let j = nbRow - 1; j >= 0; j--) {
     const HTMLRow = document.createElement("div");
     HTMLRow.classList.add("row");
@@ -158,6 +162,7 @@ function checkGamerOver(...lines) {
 }
 
 function endGame(winner) {
+  store(winner);
   alert(`Bravo au joueur ${winner}!`);
   location.reload();
 }
@@ -166,4 +171,16 @@ function launcher() {
   settings();
 }
 
+function store(winner) {
+  localStorage.setItem(
+    "J" + winner,
+    (parseInt(localStorage.getItem("J" + winner))
+      ? parseInt(localStorage.getItem("J" + winner))
+      : 0) + 1
+  );
+  console.log(localStorage);
+}
+
 launcher();
+
+store(1);
